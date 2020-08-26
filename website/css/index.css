@@ -1,0 +1,104 @@
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 1; 
+}
+
+.jumbptron{
+    padding-bottom: 0;
+}
+
+.navbar-dark{
+    background-color: #007bff;
+}
+
+.carousel {
+    background-color: #512Da8; 
+}
+    
+.carousel .carousel-item {
+    height: 400px; 
+}
+
+.carousel .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    min-width: 100%;
+}
+
+#carouselButton{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.search-sec{
+    padding: 2rem;
+}
+
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+footer{
+    background-color: #eee;
+}
+
+.card-deck{
+    position: relative;
+    top: -50px;
+}
+
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: rgba(26, 70, 104, 0.51);
+    }
+
+    .carousel .carousel-item {
+        height: 300px; 
+    }
+
+    .card-deck{
+        position: relative;
+        top: -20px;
+    }
+}
+
+@media (max-width: 768px){
+    .carousel .carousel-item {
+        height: 300px; 
+    }
+
+    .search-sec{
+        position: relative;
+        top: -114px;
+    }
+}
