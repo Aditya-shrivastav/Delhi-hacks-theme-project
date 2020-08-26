@@ -23,10 +23,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item active mr-2"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
                     <span class="navbar-text">
                         <a role="button" id="loginButton"><span class="fa fa-sign-in"></span> Login</a>
@@ -73,10 +73,10 @@
             </div>
         </div>
 
-        <header class="jumbotron pb-0">
+        <header class="jumbotron pb-0 mb-0">
             <div class="container text-center">
                 <div class="row row-content">
-                    <div class="col">
+                    <div class="col pb-0">
                         <div id="mycarousel" class="carousel slide mb-0" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -119,10 +119,10 @@
                                 <form action="#" method="post" novalidate="novalidate">
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-sm-4 m-0 p-0">
-                                            <input type="text" class="form-control search-slt text-center" placeholder="Enter Pin Code">
+                                            <input class="form-control search-slt text-center" placeholder="Enter City Name or Pin Code" value="">
                                         </div>
                                         <div class="col-4 col-sm-1 m-0 p-0">
-                                            <button type="button" class="btn btn-danger wrn-btn"><span class="fa fa-search"></span></button>
+                                            <button type="submit" class="btn btn-danger wrn-btn" id="generate"><span class="fa fa-search"></span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -133,8 +133,58 @@
             </div>
         </header>
 
-        <main class="container">
-            
+        <main class="container mt-1">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card-deck">
+                        <div class="card text-center">
+                            <div class="card-header bg-primary">
+                                <h3>Today</h3>
+                            </div>
+                            <div class="card-body">
+                                <img src="" class="img-fluid d-block">
+                                <div class="card-text" id="Today">
+                                    <img src="" id="weaterPic">
+                                    <div id="date"></div>
+                                    <div id="temp"></div>
+                                    <div id="humid"></div>
+                                    <div id="weather"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-header bg-warning">
+                                <h3>Tomorrow</h3>
+                            </div>
+                            <div class="card-body">
+                                <img src="" class="img-fluid d-block">
+                                <div class="card-text" id="Tomorrow">
+                                    <img src="" id="weaterPic">
+                                    <div id="date"></div>
+                                    <div id="temp"></div>
+                                    <div id="humid"></div>
+                                    <div id="weather"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-header bg-danger">
+                                <h3>Day after Tomorrow</h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="" class="img-fluid d-block">
+                                <div class="card-text" id="Next">
+                                    <img src="" id="weaterPic">
+                                    <div id="date"></div>
+                                    <div id="temp"></div>
+                                    <div id="humid"></div>
+                                    <div id="weather"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
