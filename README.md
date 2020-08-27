@@ -6,11 +6,11 @@
   and also the prevention Techniques based on the weather so that the crops can be protected on time.
   
 * Technology Used: 
-    *HTML 
+    * HTML 
     * CSS 
-    *JAVASCRIPT 
-    *NODE.JS
-    *JQUERY
+    * JAVASCRIPT 
+    * NODE.JS
+    * JQUERY
 
 * To run : 
     * Fork this into your system
