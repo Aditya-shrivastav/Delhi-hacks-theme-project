@@ -5,7 +5,7 @@ $(document).ready(() => {
 });
 
 $(document).ready(function(){
-    $("#mycarousel").carousel( { interval: 2000 } );
+    $("#mycarousel").carousel( { interval: 3000 } );
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("span").hasClass('fa-pause')) {
             $("#mycarousel").carousel('pause');
@@ -18,4 +18,11 @@ $(document).ready(function(){
             $("#carouselButton").children("span").addClass('fa-pause');                    
         }
     });
+});
+
+
+$(document).ready(() => {
+    if ($('#weather').children('span').innerHTML == "Clouds") {
+        $('#Today').style.backgroundImage = "url('/website/img/cloud.jpg')"
+    }
 });

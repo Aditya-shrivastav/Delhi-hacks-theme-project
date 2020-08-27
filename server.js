@@ -42,6 +42,7 @@ app.post('/add', (req, res) => {
     ProjectData['humidity'] = req.body.humidity;
     ProjectData['weather'] = req.body.weather;
     ProjectData['pressure'] = req.body.pressure;
+    ProjectData['location'] = req.body.location;
 
     res.send(ProjectData);
 });

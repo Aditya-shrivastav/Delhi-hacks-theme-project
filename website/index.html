@@ -21,8 +21,8 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse p-0" id="Navbar">
+                    <ul class="navbar-nav p-2">
                         <li class="nav-item active mr-2"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -36,7 +36,7 @@
         </nav>
 
         <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="content">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Login</h4>
@@ -47,7 +47,7 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-row">
-                                <div class="form-group col-sm-4">
+                                <div class="form-group col-sm-5">
                                     <label class="sr-only" for="exampleInputEmail3">Email address</label>
                                     <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
                                 </div>
@@ -135,7 +135,7 @@
 
         <main class="container mt-1">
             <div class="row justify-content-center">
-                <div class="col-12">
+                <div class="col-12 col-md-10">
                     <div class="card-deck">
                         <div class="card text-center">
                             <div class="card-header bg-primary">
@@ -144,45 +144,36 @@
                             <div class="card-body">
                                 <img src="" class="img-fluid d-block">
                                 <div class="card-text" id="Today">
-                                    <img src="" id="weaterPic">
-                                    <div id="date"></div>
                                     <div id="temp"></div>
-                                    <div id="humidity"></div>
+                                    <div id="location"></div>
+                                    <div id="date"></div>
                                     <div id="weather"></div>
+                                    <div id="humidity"></div>
                                     <div id="pressure"></div>
                                 </div>
                             </div>
+                            <div class="card-footer">
+                                <div><span class="fa fa-location" id="location"> </span></div>
+                            </div>
                         </div>
                         <div class="card text-center">
-                            <div class="card-header bg-warning">
+                            <div class="card-header bg-danger">
                                 <h3>Tomorrow</h3>
                             </div>
                             <div class="card-body">
                                 <img src="" class="img-fluid d-block">
                                 <div class="card-text" id="Tomorrow">
-                                    <img src="" id="weaterPic">
-                                    <div id="date"></div>
+                                    <img src="" id="weatherPic">
                                     <div id="temp"></div>
+                                    <div id="location"></div>
+                                    <div id="date"></div>
                                     <div id="humidity"></div>
-                                    <div id="weather"></div>
+                                    <div id="weather1"></div>
                                     <div id="pressure"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card text-center">
-                            <div class="card-header bg-danger">
-                                <h3>Next Day</h3>
-                            </div>
-                            <div class="card-body text-center">
-                                <img src="" class="img-fluid d-block">
-                                <div class="card-text" id="Next">
-                                    <img src="" id="weaterPic">
-                                    <div id="date"></div>
-                                    <div id="temp"></div>
-                                    <div id="humidity"></div>
-                                    <div id="weather"></div>
-                                    <div id="pressure"></div>
-                                </div>
+                            <div class="card-footer">
+                                <div><span class="fa fa-location" id="location"> </span></div>
                             </div>
                         </div>
                     </div>

@@ -1,14 +1,19 @@
 body{
     padding: 50px 0px 0px 0px;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.jumbptron{
+.jumbotron{
     padding-bottom: 0;
+    background: papayawhip;
 }
 
 .navbar-dark{
-    background-color: #007bff;
+    background-color: black;
+}
+
+.nav-item:hover{
+    background-color: #55595c;
 }
 
 .carousel {
@@ -68,6 +73,12 @@ footer{
     position: relative;
     top: -50px;
 }
+
+#date, #temp, #location, #humidity, #pressure, #weather{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 
 @media (min-width: 992px){
     .search-sec{

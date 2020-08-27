@@ -17,7 +17,7 @@ document.getElementById('generate').addEventListener('click', (e) => {
     .then(function(data){
         
         console.log(data);
-        postData('/add', {date: newDate, temp: data.main.temp, humidity: data.main.humidity, 
+        postData('/add', {date: newDate, location: data.name, temp: data.main.temp, humidity: data.main.humidity, 
             weather: data.weather[0].main, pressure: data.main.pressure})
         updateUI();
     });
@@ -39,11 +39,12 @@ const updateUI = async() => {
     try {
         const allData = await req.json();
 
-        document.getElementById('date').innerHTML = `Date : ${allData.date}`;
-        document.getElementById('temp').innerHTML = `Temperature : ${allData.temp} k`;
+        document.getElementById('date').innerHTML = `<span class="fa fa-table">  ${allData.date}</span>`;
+        document.getElementById('temp').innerHTML = `<span class="fa fa-thermometer half">  ${allData.temp} k</span>`;
         document.getElementById('humidity').innerHTML = `Humidity : ${allData.humidity}%`;
-        document.getElementById('weather').innerHTML = `Weather : ${allData.weather}`;
+        document.getElementById('weather').innerHTML = `${allData.weather}`;
         document.getElementById('pressure').innerHTML = `Pressure : ${allData.pressure} pascal`;
+        document.getElementById('location').innerHTML = `<span class="fa fa-map-marker">  ${allData.location}</span>`;
 
     } catch (error) {
         console.log("error", error);
@@ -64,7 +65,8 @@ const postData  = async(url = '', data = {}) => {
             temp: data.temp,
             humidity: data.humidity,
             weather: data.weather,
-            pressure: data.pressure
+            pressure: data.pressure,
+            location: data.location
         })
     });
 
